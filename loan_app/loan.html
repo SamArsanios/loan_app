@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JacSam Loan Initiative</title>
+    <link rel="stylesheet" type="text/css" href="loan.css" />
+  </head>
+  <body>
+    <div>
+      <form id="main-form">
+        <h1>Enter Loan Data</h1>
+        <ul>
+          <li><label for="">Amount of the Loan($):</label></li>
+          <li><input id="loan" type="text" /></li>
+
+          <li><label for="">Annual Interest(%):</label></li>
+          <li><input id="interest" type="text" /></li>
+
+          <li><label for="">Repayment Period (years):</label></li>
+          <li><input id="period" type="text" /></li>
+
+          <li><label for="">Zipcode (to find lenders):</label></li>
+          <li><input id="zip" type="text" /></li>
+
+          <li>
+            <label for=""><strong>Approximate Payments:</strong></label>
+          </li>
+          <li><input type="submit" name="submit" value="Calculate" /></li>
+
+          <li><label for="">Monthly Payment:</label></li>
+          <li><h4 id="monthly-payment">$</h4></li>
+
+          <li><label for="">Total Payment:</label></li>
+          <li><h4 id="total-payment">$</h4></li>
+
+          <li><label for="">Total Interest:</label></li>
+          <li><h4 id="total-interest">$</h4></li>
+        </ul>
+        <div>
+          <img src="pic.png" />
+        </div>
+      </form>
+    </div>
+    <script src="loan.js"></script>
+  </body>
+</html>
